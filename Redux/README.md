@@ -18,3 +18,6 @@ Not allowed to directly update the state object
 Third Principle :
 "To specify how the state tree is updated based on actions, you write pure reducers"
 Reducer - (previousState, action) => newState
+
+
+![Redux Principle](https://github.com/AbhishekPethe/Redux-Toolkit-CodeV/assets/82797230/7a362b07-6ab3-4d52-828d-b6faad9a9555)
