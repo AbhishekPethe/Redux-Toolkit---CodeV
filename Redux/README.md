@@ -21,3 +21,34 @@ Reducer - (previousState, action) => newState
 
 
 ![Redux Principle](https://github.com/AbhishekPethe/Redux-Toolkit-CodeV/assets/82797230/7a362b07-6ab3-4d52-828d-b6faad9a9555)
+
+
+
+---Actions---
+
+The only way your application can interact with the store
+Carry some information from your app to the redux store
+Plain JavaScript objects
+Have a 'type' property that describes something that happened in the
+application.
+The 'type' property is typically defined as string constants
+
+
+
+---Reducers---
+
+Specify how the app's state changes in response to actions sent to the store
+Function that accepts state and action as arguments, and returns the next state
+of the application
+(previousState, action) => newState
+
+
+---Redux Store---
+
+One store for the entire application
+Responsibilities -
+> Holds application state
+> Allows access to state via getState()
+> Allows state to be updated via dispatch(action)
+> Registers listeners via subscribe(listener)
+> Handles unregistering of listeners via the function returned by subscribe(listener)
