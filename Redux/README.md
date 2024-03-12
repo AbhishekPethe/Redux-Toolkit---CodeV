@@ -52,3 +52,12 @@ Responsibilities -
 - Allows state to be updated via dispatch(action)
 - Registers listeners via subscribe(listener)
 - Handles unregistering of listeners via the function returned by subscribe(listener)
+
+
+
+--MiddleWare--
+MiddleWare is used as a extension for third party functionalities.
+It is executed during dispatching the action and moment it reaches the reducer.
+
+--redux-thunk--
+Thunk is used for async operations in redux
