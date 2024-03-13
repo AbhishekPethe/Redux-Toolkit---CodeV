@@ -74,15 +74,13 @@ const IceCreamReducer = (state = initialState.numOfIceCream , action) => {
         // the thing is when the action is dispatched , it reaches to both the reducers
         // its upto the reducer to execute it or ignore 
         // below we are ordering cake but still reducing the icecream quantity
+        // this doesnt happen in redux toolkit , reducer generated from slice will only responds to actions dispatched by the same slice 
         case ORDER_CAKE:
             return state - 1
         default:
             return state
     }
 }
-
-
-// const store = createStore({ reducer, reducer1 })
 
 
 // combining reducers
