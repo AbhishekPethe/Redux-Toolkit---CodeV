@@ -71,6 +71,11 @@ const IceCreamReducer = (state = initialState.numOfIceCream , action) => {
         case RESTOCK_ICECREAM:
             return  state + action.payload
 
+        // the thing is when the action is dispatched , it reaches to both the reducers
+        // its upto the reducer to execute it or ignore 
+        // below we are ordering cake but still reducing the icecream quantity
+        case ORDER_CAKE:
+            return state - 1
         default:
             return state
     }
