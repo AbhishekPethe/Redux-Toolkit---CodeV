@@ -1,14 +1,10 @@
 const configureStore = require("@reduxjs/toolkit").configureStore
-// const cakeReducer = require("../features/cake/cakeSlice")
-const cakeSlice = require("../features/cake/cakeSlice")
+const cakeReducer = require("../features/cake/cakeSlice")
 
 const store = configureStore({
     reducer: {
-        cake: cakeSlice.reducer
+        cake: cakeReducer
     }
 })
 
-module.exports = {
-    store,
-    cakeSlice
-}
+module.exports = store

@@ -1,6 +1,5 @@
-const {store} = require("./app/store")
-// const cakeActions = require("./features/cake/cakeSlice").cakeActions
-const cakeSlice = require("./features/cake/cakeSlice")
+const store = require("./app/store")
+const cakeActions = require("./features/cake/cakeSlice").cakeActions
 
 console.log(store.getState());
 
@@ -9,5 +8,4 @@ const unsubscribe = store.subscribe(() => {
 })
 
 
-// store.dispatch(cakeActions.ordered())
-console.log(cakeSlice.actions.ordered());
+store.dispatch(cakeActions.ordered())
