@@ -58,7 +58,7 @@ const reducer = (state = initialState, action) => {
             }
         default:
             return state
-    }
+    } 
 }
 
 // thunk allows us to return a function instead of an action , this way we can also perform side effects such as async tasks
@@ -67,9 +67,9 @@ const fetchUsers = () => {
     return async function(dispatch) {
         try {
             dispatch(fetchUsersRequested())
-            const res = await fetch("https://jsonplaceholder.typicode.com/userss")
+            const res = await fetch("https://jsonplaceholder.typicode.com/users")
             const data = await res.json()
-            const users = data.map((each)=> each.name)
+            const users = await data.map((each)=> each.name)
             dispatch(fetchUsersSucceeded(users))
         }
         catch (error) {
