@@ -5,3 +5,8 @@ package.json
 node_modules
 React-RTK/vite.config.js
 React-RTK/public/vite.svg
+RTK-BlogProject/tailwind.config.js
+RTK-BlogProject/vite.config.js
+RTK-BlogProject/README.md
+RTK-BlogProject/.eslintrc.cjs
+RTK-BlogProject/src/index.css
